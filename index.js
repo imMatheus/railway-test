@@ -1,7 +1,7 @@
 import express from 'express'
 import { rand } from './rand.js'
 const app = express()
-const port = 3000
+const port = `0.0.0.0:$PORT`
 
 app.get('/', (req, res) => {
     res.send({ hej: 'world' })
