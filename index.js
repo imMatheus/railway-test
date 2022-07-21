@@ -11,6 +11,6 @@ app.get('/:id', (req, res) => {
     res.send({ id: req.params.id, rand: rand() })
 })
 
-app.listen(port, () => {
+app.listen(process.env.PORT, () => {
     console.log(`listening on port ${port}`)
 })
